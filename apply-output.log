@@ -1,0 +1,21 @@
+[0m[1mcloudsmith_repository_geo_ip_rules.prod_geoip: Creating...[0m[0m
+[0m[1mcloudsmith_oidc.github_actions: Modifying... [id=CPW8Z9ecEWtF][0m[0m
+[0m[1mcloudsmith_repository_privileges.production_teams: Modifying... [id=psharma-dev.production][0m[0m
+[0m[1mcloudsmith_repository_privileges.staging_teams: Modifying... [id=psharma-dev.staging][0m[0m
+[0m[1mcloudsmith_repository_privileges.qa_teams: Modifying... [id=psharma-dev.qa][0m[0m
+[0m[1mcloudsmith_repository_geo_ip_rules.prod_geoip: Creation complete after 5s [id=psharma-dev.68gndZVboL4N][0m
+[0m[1mcloudsmith_repository_privileges.production_teams: Modifications complete after 9s [id=psharma-dev.production][0m
+[0m[1mcloudsmith_repository_privileges.qa_teams: Modifications complete after 9s [id=psharma-dev.qa][0m
+[0m[1mcloudsmith_repository_privileges.staging_teams: Modifications complete after 9s [id=psharma-dev.staging][0m
+[0m[1mcloudsmith_oidc.github_actions: Modifications complete after 9s [id=CPW8Z9ecEWtF][0m
+[0m[1m[32m
+Apply complete! Resources: 1 added, 4 changed, 0 destroyed.
+[0m[0m[1m[32m
+Outputs:
+
+[0mrepository_slugs = {
+  "production" = "68gndZVboL4N"
+  "qa" = "wgKCrsoKd262"
+  "staging" = "7bN4vw6FIqLe"
+}
+service_account_slug = "ci-bot-okmz"
