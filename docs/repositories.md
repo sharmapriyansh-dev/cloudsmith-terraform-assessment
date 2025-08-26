@@ -11,7 +11,8 @@ This page details how I used the Cloudsmith Terraform provider for repository op
 
 Terraform example:
 
-`provider "cloudsmith" {
+`
+provider "cloudsmith" {
     api_key = "my-api-key"
 }
 data "cloudsmith_organization" "my_organization" {
