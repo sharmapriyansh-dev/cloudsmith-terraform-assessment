@@ -73,10 +73,10 @@ data "cloudsmith_organization" "org" {
 
 ![Terraform Init](terraform-apply-terraform-assessment.png)
 
-#### 5. Terraform state show
-
-![Terraform Init](terraform-state-show-terraform-assessment.png)
-
-#### 6. Terraform state list
+#### 5. Terraform state list
 
 ![Terraform Init](terraform-state-list-terraform-assessment.png)
+
+#### 6. Terraform state show (example production rep
+
+![Terraform Init](terraform-state-show-example-terraform-assessment.png)
