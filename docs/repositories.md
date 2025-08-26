@@ -9,15 +9,14 @@ This page details how I used the Cloudsmith Terraform provider for repository op
 
 ---
 
-Terraform example
+Terraform example:
+
 `provider "cloudsmith" {
     api_key = "my-api-key"
 }
-
 data "cloudsmith_organization" "my_organization" {
     slug = "my-organization"
 }
-
 resource "cloudsmith_repository" "my_repository" {
     description = "A certifiably-awesome private package repository"
     name        = "My Repository"
@@ -25,4 +24,13 @@ resource "cloudsmith_repository" "my_repository" {
     slug        = "my-repository"
 }
 `
+## Terraform Code Snippet
 
+## 1. QA
+
+> resource "cloudsmith_repository" "qa" {
+> name        = "QA"
+>  slug        = "qa"
+>  namespace   = var.organization
+> description = "QA repository"
+> }
