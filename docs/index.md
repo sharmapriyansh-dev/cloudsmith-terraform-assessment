@@ -7,6 +7,9 @@ This site provides a structured overview of all tasks completed as part of the p
 
 ## 📑 Table of Contents
 
+- [Provider](provider.md)  
+  Details of Cloudsmith Terraform provider, organization, and user API keys.
+
 - [Repositories](repositories.md)  
   Details of QA, Staging, and Production repositories, along with configuration, upstreams, and repository settings.
 
@@ -28,9 +31,6 @@ This site provides a structured overview of all tasks completed as part of the p
 - [Vulnerability Policies](vulnerability_policies.md)  
   Details on how vulnerability scanning and enforcement policies were applied.
 
-- [Terraform Project Structure](terraform_structure.md)  
-  Breakdown of the Terraform codebase, modules, and resources used.
-
 ---
 
 ## 🌐 About this Site
@@ -46,4 +46,5 @@ Email: psharma@cloudsmith.io
 ---
 
 *Thank you for reviewing my work!*
+
 
