@@ -16,6 +16,9 @@ This site provides a structured overview of all tasks completed as part of the p
 - [OIDC Integration](oidc.md)  
   Documentation of OpenID Connect (OIDC) setup for secure GitHub Actions authentication.
 
+- [Repository Privileges](repository-privileges.md)  
+  Documentation of OpenID Connect (OIDC) setup for secure GitHub Actions authentication.
+
 - [Service Accounts](service_accounts.md)  
   Set up and use service accounts for automation with restricted permissions.
 
@@ -27,12 +30,6 @@ This site provides a structured overview of all tasks completed as part of the p
 
 - [Terraform Project Structure](terraform_structure.md)  
   Breakdown of the Terraform codebase, modules, and resources used.
-
-- [Troubleshooting](troubleshooting.md)  
-  Common issues faced during the assessment and how they were resolved.
-
-- [Key Learnings](learnings.md)  
-  Final reflections and takeaways from completing this project.
 
 ---
 
@@ -49,3 +46,4 @@ Email: psharma@cloudsmith.io
 ---
 
 *Thank you for reviewing my work!*
+
