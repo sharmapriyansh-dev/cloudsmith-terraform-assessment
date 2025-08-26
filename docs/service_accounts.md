@@ -32,26 +32,21 @@ resource "cloudsmith_service" "my_service" {
 #### Service account to be used with OIDC
 
 ````
-resource "cloudsmith_service" "oidc_github" {
-  name         = "oidc-github"
+# Create service account (ci-bot)
+resource "cloudsmith_service" "ci_bot" {
+  name         = "ci-bot"
   organization = var.organization
-}
-resource "cloudsmith_oidc" "github_actions" {
-  namespace    = data.cloudsmith_organization.org.slug_perm
-  name         = "GitHub Actions OIDC"
-  enabled      = true
-  provider_url = "https://token.actions.githubusercontent.com/"
-  service_accounts = [
-    cloudsmith_service.oidc_github.slug,
-  ]
+  description  = "Service account used by CI/CD"
 
-  claims = {
-    repository_owner = "sharmapriyansh-dev"
+  team {
+    slug = cloudsmith_team.devops.slug
+    role = "Member"
   }
 }
 ````
 
 #### Output
 
-![Service Account](tfm-state-service-oidc-github.png)
+![Service Account](tfm-state-service-ci-bot.png)
+
 
