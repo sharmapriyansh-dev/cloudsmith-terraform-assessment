@@ -1,4 +1,4 @@
-# Cloudsmith Service Privileges
+# Cloudsmith Service Account
 
 ## Task
 This page details how I used the Cloudsmith Terraform provider to create a service account for using it later with OIDC.
@@ -54,3 +54,4 @@ resource "cloudsmith_oidc" "github_actions" {
 #### Output
 
 ![Service Account](tfm-state-service-oidc-github.png)
+
