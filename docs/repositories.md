@@ -11,7 +11,7 @@ This page details how I used the Cloudsmith Terraform provider for repository op
 
 Terraform example:
 
-`
+```
 provider "cloudsmith" {
     api_key = "my-api-key"
 }
@@ -24,14 +24,42 @@ resource "cloudsmith_repository" "my_repository" {
     namespace   = "${data.cloudsmith_organization.my_organization.slug_perm}"
     slug        = "my-repository"
 }
-`
-## Terraform Code Snippet
+```
 
-## 1. QA
+### Terraform Code Snippet
 
-> resource "cloudsmith_repository" "qa" {
-> name        = "QA"
->  slug        = "qa"
->  namespace   = var.organization
-> description = "QA repository"
-> }
+#### 1. QA
+
+````
+resource "cloudsmith_repository" "qa" {
+  name        = "QA"
+  slug        = "qa"
+  namespace   = var.organization
+  description = "QA repository"
+}
+````
+
+
+#### 2. Staging
+
+````
+resource "cloudsmith_repository" "staging" {
+  name        = "Staging"
+  slug        = "staging"
+  namespace   = var.organization
+  description = "Staging repository"
+}
+````
+
+### 3. Production
+
+```
+resource "cloudsmith_repository" "production" {
+  name                        = "Production"
+  slug                        = "production"
+  namespace                   = var.organization
+  description                 = "Production repository"
+  replace_packages_by_default = true
+}
+
+````
