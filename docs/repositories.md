@@ -40,7 +40,7 @@ resource "cloudsmith_repository" "qa" {
 ````
 #### Output:
 
-![QA Repository](../docs/tfm-state-qa-repo.png)
+![QA Repository](tfm-state-qa-repo.png)
 
 #### 2. Staging
 
@@ -54,7 +54,7 @@ resource "cloudsmith_repository" "staging" {
 ````
 #### Output:
 
-![QA Repository](../docs/tfm-state-staging-repo.png)
+![QA Repository](tfm-state-staging-repo.png)
 
 ### 3. Production
 
@@ -71,4 +71,4 @@ resource "cloudsmith_repository" "production" {
 
 #### Output:
 
-![QA Repository](../docs/tfm-state-prod-repo.png)
+![QA Repository](tfm-state-prod-repo.png)
