@@ -40,7 +40,7 @@ resource "cloudsmith_repository_privileges" "qa_teams" {
 
 #### Output
 
-![QA Repository Privileges](tfm-state-privileges-qa-team.png)
+![QA Repository Privileges](tfm-state-privileges-qa-teams.png)
 
 #### Staging Repository
 
