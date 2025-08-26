@@ -84,4 +84,4 @@ resource "cloudsmith_repository_upstream" "staging_pypi" {
 ````
 
 #### Output
-![Staging Repository](tfm-state-upstrm-qa-pypi.png)
+![Staging Repository](tfm-state-upstrm-staging-pypi.png)
