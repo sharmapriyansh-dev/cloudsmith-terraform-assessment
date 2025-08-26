@@ -161,7 +161,7 @@ resource "cloudsmith_repository_privileges" "production_sa" {
 
 #### Output
 
-![Production Repository Privileges](tfm-state-privileges-prod-sa.png)
+![Production Repository Privileges](tfm-state-privilegses-prod-sa.png)
 
 ### Summary
 
